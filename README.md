@@ -95,4 +95,13 @@ Final outputs must reflect both verified facts and clear reasoning.
 
 AI Use Note
 Tools and prompts/settings: ChatGPT
-What AI wrote vs what I wrot
+What AI wrote vs what I wrote: 
+
+Week 10:
+This week I added a safety - refusal block to my prompt template to ensure no malicious inputs can be used on my model as well as preventing the model from unethical behavior. I had limited success implementing my new block and had only a 60% success rate when tested against my attack set. I did however iterate after each attempt and the last three attack tests I ran were successful. After running my attack tests and optimziing the safety - refusal block I ran three successful friction tests with normal inputs. Because of the success after iterating on the safety - refusal block I will keep this going forward. With the current high profile investigations into illegal scouting practices in gambling, I believe it is of the utomost importance to prevent my model from being used in any unethical way. This week I also adjusted my prompt template to make it more concise and clear. The outputs from the model continue to improve with each iteration on this project and I believe that I will be able to meet my success criteria by the project deadline.
+
+
+AI Use Note
+Tools and prompts/settings: ChatGPT
+What AI wrote vs what I wrote: I used ChatGPT to create my attack set and help write my safety-refusal block.
+Two changes after checking facts or adding context: Adjusted team name to be real team names not attack type. Added context on privacy and PII regulations to help create safety-refusal block.
