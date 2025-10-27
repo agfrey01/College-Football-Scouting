@@ -1,28 +1,29 @@
 ﻿test_id,seed,temperature,top_p,top_k,max_tokens,latency_ms,cost_usd,score_0_1,notes
-1,N/A,0.4,0.9,N/A,250,8.92 secs,0,0,"Very innaccurate, results cutoff due to lack of tokens"
-2,N/A,0.4,0.9,N/A,500,10.81 secs,0,1,Innaccurate
-3,N/A,0.6,0.9,N/A,500,10.51 secs,0,0,"Still innacurate, but wider variation. Upping the temperature definitely increased the randomness and creativity of the model"
-4,N/A,0.4,0.9,N/A,500,8.43 secs,0,0,"Baseline vs. A, used few shot prompting, out was formatted perfectly, but still innaccurate"
-5,N/A,0.4,0.9,N/A,500,7.60 secs,0,0,"Baseline vs. B, used chain of thought prompting, innaccurate results, but reasoning path guided results to be more acceptable"
-6,N/A,0.4,0.9,N/A,500,9.16 secs,0,1,"Hard Case, using a different input format (link instead of json file), report was acceptable"
-7,N/A,0.4,0.9,N/A,500,7.95 secs,0,1,"Plan-First Prompt, best test yet. The plan created was logical and executed well."
-8,N/A,0.4,0.9,N/A,500,10.32 secs,0,1,"Plan-and-Check Prompt, was able to check and correct incorrect data."
-9,N/A,0.4,0.9,N/A,500,8.58 secs,0,1,Chain of thought example to use a baseline to test Plan-First and Plan-and-Check
-10,N/A,0.4,0.9,N/A,5000,5.84 secs,0,1,"Formatting was correct, file passed json validator from python"
-11,N/A,0.4,0.9,N/A,5000,7.85 secs,0,1,"Formatting was correct, file passed json validator from python, slightly longer latency"
-12,N/A,0.4,0.9,N/A,2000,8.61 secs,0,1,"Formatting was correct, file passed json validator from python, lowering tokens had minimal effect"
-13,N/A,0.4,0.9,N/A,1000,7.82 secs,0,1,"Formatting was correct, file passed json validator from python, needs more tokens to effectively analyze testset"
-14,N/A,0.4,0.9,N/A,1500,9.20 secs,0,1,"Formatting was correct, file passed json validator from python,  still needs more tokens, report is correct, but not useful"
-15,N/A,0.4,0.9,N/A,2500,9.36 secs,0,1,"Formatting was correct, file passed json validator from python, more tokens did not resolve issue from previous test"
-16,N/A,0.4,0.9,N/A,2500,8.31 secs,0,1,"Baseline test for context pack, output consistent with previous test (nothing was changed from previous test)"
+1,N/A,0.4,0.9,N/A,250,8920,0,0,"Very innaccurate, results cutoff due to lack of tokens"
+2,N/A,0.4,0.9,N/A,500,10810,0,1,Innaccurate
+3,N/A,0.6,0.9,N/A,500,10510,0,0,"Still innacurate, but wider variation. Upping the temperature definitely increased the randomness and creativity of the model"
+4,N/A,0.4,0.9,N/A,500,8430,0,0,"Baseline vs. A, used few shot prompting, out was formatted perfectly, but still innaccurate"
+5,N/A,0.4,0.9,N/A,500,7600,0,0,"Baseline vs. B, used chain of thought prompting, innaccurate results, but reasoning path guided results to be more acceptable"
+6,N/A,0.4,0.9,N/A,500,9160,0,1,"Hard Case, using a different input format (link instead of json file), report was acceptable"
+7,N/A,0.4,0.9,N/A,500,7950,0,1,"Plan-First Prompt, best test yet. The plan created was logical and executed well."
+8,N/A,0.4,0.9,N/A,500,10320,0,1,"Plan-and-Check Prompt, was able to check and correct incorrect data."
+9,N/A,0.4,0.9,N/A,500,8580,0,1,Chain of thought example to use a baseline to test Plan-First and Plan-and-Check
+10,N/A,0.4,0.9,N/A,5000,5840,0,1,"Formatting was correct, file passed json validator from python"
+11,N/A,0.4,0.9,N/A,5000,7850,0,1,"Formatting was correct, file passed json validator from python, slightly longer latency"
+12,N/A,0.4,0.9,N/A,2000,8610,0,1,"Formatting was correct, file passed json validator from python, lowering tokens had minimal effect"
+13,N/A,0.4,0.9,N/A,1000,7820,0,1,"Formatting was correct, file passed json validator from python, needs more tokens to effectively analyze testset"
+14,N/A,0.4,0.9,N/A,1500,9200,0,1,"Formatting was correct, file passed json validator from python,  still needs more tokens, report is correct, but not useful"
+15,N/A,0.4,0.9,N/A,2500,9360,0,1,"Formatting was correct, file passed json validator from python, more tokens did not resolve issue from previous test"
+16,N/A,0.4,0.9,N/A,2500,8310,0,1,"Baseline test for context pack, output consistent with previous test (nothing was changed from previous test)"
 17,N/A,0.4,0.9,N/A,1000000,N/A,0,0,"Error not enough tokens to complete the task. I set the max tokens to unlimited to adjust for context pack. My model maxes out at 50,000 tokens and this test surpassed that."
-18,N/A,0.4,0.9,N/A,"25,000",17.09 secs,0,1,"Best output yet, no citations but most acceptable analysis to date"
-19,N/A,0.4,0.9,N/A,"25,001",12.04 secs,0,1,Consults tool_calls.json for notes on test
-20,N/A,0.4,0.9,N/A,"25,002",15.43 secs,0,1,Consults tool_calls.json for notes on test
-21,N/A,0.4,0.9,N/A,"25,003",13.98 secs,0,1,Consults tool_calls.json for notes on test
-22,N/A,0.4,0.9,N/A,"25,004",12.02 secs,0,1,Consults tool_calls.json for notes on test
-23,N/A,0.4,0.9,N/A,"25,005",11.47 secs,0,1,Consults tool_calls.json for notes on test
-24,N/A,0.4,0.9,N/A,"25,005",10.98 secs,0,1,Friction test case. No incorrect refusal
-25,N/A,0.4,0.9,N/A,"25,005",7.94 secs,0,1,Friction test case. No incorrect refusal
-26,N/A,0.4,0.9,N/A,"25,005",9.11 secs,0,1,Friction test case. No incorrect refusal
+18,N/A,0.4,0.9,N/A,"25,000",17090,0,1,"Best output yet, no citations but most acceptable analysis to date"
+19,N/A,0.4,0.9,N/A,"25,001",12040,0,1,Consults tool_calls.json for notes on test
+20,N/A,0.4,0.9,N/A,"25,002",15430,0,1,Consults tool_calls.json for notes on test
+21,N/A,0.4,0.9,N/A,"25,003",13980,0,1,Consults tool_calls.json for notes on test
+22,N/A,0.4,0.9,N/A,"25,004",12020,0,1,Consults tool_calls.json for notes on test
+23,N/A,0.4,0.9,N/A,"25,005",11470,0,1,Consults tool_calls.json for notes on test
+24,N/A,0.4,0.9,N/A,"25,005",10980,0,1,Friction test case. No incorrect refusal
+25,N/A,0.4,0.9,N/A,"25,005",7940,0,1,Friction test case. No incorrect refusal
+26,N/A,0.4,0.9,N/A,"25,005",9110,0,1,Friction test case. No incorrect refusal
+
 
