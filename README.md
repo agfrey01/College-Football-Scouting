@@ -105,3 +105,11 @@ AI Use Note
 Tools and prompts/settings: ChatGPT
 What AI wrote vs what I wrote: I used ChatGPT to create my attack set and help write my safety-refusal block.
 Two changes after checking facts or adding context: Adjusted team name to be real team names not attack type. Added context on privacy and PII regulations to help create safety-refusal block.
+
+Week 11: 
+Optimization Block
+Goals: To create a concise scouting report for a football team with minimal inputs from the user that is informative to a football fan, coach, player, or media member.
+Constraints: The output must fit onto one page, be know more than 500 words, and be formatted correctly as a json file. The model must take no longer than 10 minutes to return the report.  
+Quality Floor: The report has no inaccurate statistics, makes no unstubstaniated claims, and produces actionable insights. 
+Target Latency: Under 10 minutes
+Budget USD: 0
