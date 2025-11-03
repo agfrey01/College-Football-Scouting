@@ -16,14 +16,20 @@
 15,N/A,0.4,0.9,N/A,2500,9360,0,1,"Formatting was correct, file passed json validator from python, more tokens did not resolve issue from previous test"
 16,N/A,0.4,0.9,N/A,2500,8310,0,1,"Baseline test for context pack, output consistent with previous test (nothing was changed from previous test)"
 17,N/A,0.4,0.9,N/A,1000000,N/A,0,0,"Error not enough tokens to complete the task. I set the max tokens to unlimited to adjust for context pack. My model maxes out at 50,000 tokens and this test surpassed that."
-18,N/A,0.4,0.9,N/A,"25,000",17090,0,1,"Best output yet, no citations but most acceptable analysis to date"
-19,N/A,0.4,0.9,N/A,"25,001",12040,0,1,Consults tool_calls.json for notes on test
-20,N/A,0.4,0.9,N/A,"25,002",15430,0,1,Consults tool_calls.json for notes on test
-21,N/A,0.4,0.9,N/A,"25,003",13980,0,1,Consults tool_calls.json for notes on test
-22,N/A,0.4,0.9,N/A,"25,004",12020,0,1,Consults tool_calls.json for notes on test
-23,N/A,0.4,0.9,N/A,"25,005",11470,0,1,Consults tool_calls.json for notes on test
-24,N/A,0.4,0.9,N/A,"25,005",10980,0,1,Friction test case. No incorrect refusal
-25,N/A,0.4,0.9,N/A,"25,005",7940,0,1,Friction test case. No incorrect refusal
-26,N/A,0.4,0.9,N/A,"25,005",9110,0,1,Friction test case. No incorrect refusal
+18,N/A,0.4,0.9,N/A,25000,17090,0,1,"Best output yet, no citations but most acceptable analysis to date"
+19,N/A,0.4,0.9,N/A,25000,12040,0,1,Consults tool_calls.json for notes on test
+20,N/A,0.4,0.9,N/A,25000,15430,0,1,Consults tool_calls.json for notes on test
+21,N/A,0.4,0.9,N/A,25000,13980,0,1,Consults tool_calls.json for notes on test
+22,N/A,0.4,0.9,N/A,25000,12020,0,1,Consults tool_calls.json for notes on test
+23,N/A,0.4,0.9,N/A,25000,11470,0,1,Consults tool_calls.json for notes on test
+24,N/A,0.4,0.9,N/A,25000,10980,0,1,Friction test case. No incorrect refusal
+25,N/A,0.4,0.9,N/A,25000,7940,0,1,Friction test case. No incorrect refusal
+26,N/A,0.4,0.9,N/A,25000,9110,0,1,Friction test case. No incorrect refusal
+27,N/A,0.8,0.9,N/A,25000,15191,0,1, Parameter Sweep with adjusted temperature to 0.8. Quality and sqeed remain consistent with previous tests.
+28,N/A,0.4,0.5,N/A,25000,38101,0,1, Parameter Sweep with adjusted top p to 0.5. Quality remained consistent but speed was more than double previous tests.
+29,N/A,0.4,0.9,N/A,5000,15157,0,1, Parameter Sweep with adjusted max token to 5000. Speed remained consistent with previous tests. Quality regressed slightly.
+30,N/A,0.8,0.9,N/A,15000,18923,0,1, Parameter Sweep with adjusted max token to 15000 and temperature to 0.8. Speed remained consistent with previous tests. Quality regressed slightly. Response was more creative and insights were better, but were shorter due to lack of tokens.
+31,N/A,0.6,0.9,N/A,25000,10997,0,1, Parameter Sweep with adjusted temperature to 0.6. Speed improved slightly. Quality improved slightly and was more creative.
+31,N/A,0.7,0.9,N/A,25000,10997,0,1, Parameter Sweep with adjusted temperature to 0.7. Speed remained consistent with previous tests. Quality improved slightly more than last test in the same way.
 
 
