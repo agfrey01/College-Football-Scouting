@@ -120,3 +120,11 @@ AI Use Note
 Tools and prompts/settings: None
 What AI wrote vs what I wrote: I did not use any AI to help with this week's assignments.
 Two changes after checking facts or adding context: N/A
+
+Week 12:
+After testing the regression set on my model, I computed a 90% pass rate. 9 out of the 10 tests were successful with most also getting a score of a 4 or a 5. This indicates my model is relatively stable with minor edge case issues. The definition of done threshold for the regression set will be set at 90% for next week with no tests having a critical failure. This crossing this threshold will give me confidence that my model is ready for use by others. Edge cases continue to be a problem, particularly when the case involves an error in the inputted URL. To fix this in Week 13 I plan on updating my safety block to have stronger protocols in place for identifying faulty URLs and rejecting the input. 
+
+AI Use Note
+Tools and prompts/settings: None
+What AI wrote vs what I wrote: I did not use any AI to help with this week's assignments.
+Two changes after checking facts or adding context: N/A
