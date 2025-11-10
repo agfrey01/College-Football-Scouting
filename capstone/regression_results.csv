@@ -1,0 +1,11 @@
+case_id,category,variant,passed_0_1,score_1_5,notes
+R001,Typical Input,baseline,1,5,Clemson data consistent with previous extraction
+R002,Typical Input,baseline,1,5,Miami dataset schema and values stable
+R003,Typical Input,baseline,1,4,SMU metrics slightly varied but within expected tolerance
+R004,Typical Input,baseline,1,5,Kentucky data stable across runs
+R005,Edge Case,baseline,1,4,Pittsburgh name normalized successfully
+R006,Stretch Case,baseline,1,3,Baltimore data flagged correctly as non-college source
+R007,Typical Input,baseline,1,5,Louisville model consistency confirmed
+R008,Edge Case,baseline,0,2,System failed to correct missing protocol in URL
+R009,Stretch Case,baseline,1,4,Handled 50+ team URLs efficiently
+R010,Validation,baseline,1,5,Duplicate team entries correctly handled
