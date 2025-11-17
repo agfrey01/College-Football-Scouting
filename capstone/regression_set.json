@@ -58,5 +58,24 @@
     "category": "Validation",
     "input": "Check duplicate entries for same team (e.g., Kentucky appears twice)",
     "expected_value": "Duplicates consolidated or flagged; no duplicate records in final dataset"
-  }
+  },
+  {
+  "case_id": "R011",
+  "category": "Typical Input",
+  "input": "Duke 2025 defensive metrics reload",
+  "expected_value": "Duke defensive efficiency, yards allowed, and turnover data match prior baseline without schema drift"
+},
+{
+  "case_id": "R012",
+  "category": "Edge Case",
+  "input": "Team dataset containing null values for drive-level stats",
+  "expected_value": "System fills or flags nulls consistently; no downstream scoring module failures"
+},
+{
+  "case_id": "R013",
+  "category": "Stress Case",
+  "input": "Consecutive reloads of 5 teams within 1 second",
+  "expected_value": "Caching and rate-limiting behave correctly; no throttling errors or partial writes"
+}
+
 ]
