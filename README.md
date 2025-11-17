@@ -128,3 +128,15 @@ AI Use Note
 Tools and prompts/settings: None
 What AI wrote vs what I wrote: I did not use any AI to help with this week's assignments.
 Two changes after checking facts or adding context: N/A
+
+Week 13:
+This week I experimented with expanding the model’s context by adding a large statistical file (stats2024.csv) directly into the prompt. The goal was to improve scouting report accuracy by giving the model access to more detailed numeric data during inference. I updated the notebook to load and inject the full CSV content into the API call, alongside the prompt template, tools, and regression set.
+
+However, after running the updated workflow, the request consistently exceeded the token limit allowed by the API. As a result, the model returned no usable output, preventing any meaningful regression or A/B evaluation. Because this change significantly increases prompt size and makes the system unstable, I will not be keeping this modification going forward.
+
+Next week, I will revert to a lighter-weight context approach and explore alternative methods such as preprocessing the stats into summarized features or storing structured data in smaller chunks that can be selectively loaded based on team. This will maintain performance while avoiding token overflows.
+
+AI Use Note
+Tools and prompts/settings: ChatGPT
+What AI wrote vs what I wrote: ChatGPT editted my writing and formatted into a cohesive narrative for both my README.md file and CHANGELOG.md file
+Two changes after checking facts or adding context: I had to remove the extraneous details the model added to my writing. I also had to add more detail afterward to comprehensively update my README.md file.
