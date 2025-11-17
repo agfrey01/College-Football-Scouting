@@ -1,81 +1,21 @@
 [
-  {
-    "case_id": "R001",
-    "category": "Typical Input",
-    "input": "Clemson 2025 team data reload",
-    "expected_value": "Clemson statistics match prior snapshot; no structural schema changes"
-  },
-  {
-    "case_id": "R002",
-    "category": "Typical Input",
-    "input": "Miami 2025 team data reload",
-    "expected_value": "Miami dataset loads without timeout; data columns consistent with baseline"
-  },
-  {
-    "case_id": "R003",
-    "category": "Typical Input",
-    "input": "SMU 2025 team data reload",
-    "expected_value": "SMU offensive and defensive metrics remain within ±1% of previous extraction"
-  },
-  {
-    "case_id": "R004",
-    "category": "Typical Input",
-    "input": "Kentucky 2025 team data reload",
-    "expected_value": "Kentucky record and stat totals remain consistent; opponent links unchanged"
-  },
-  {
-    "case_id": "R005",
-    "category": "Edge Case",
-    "input": "University of Pittsburgh Panthers data with extended name and embedded URL",
-    "expected_value": "System correctly normalizes name and parses link without truncation"
-  },
-  {
-    "case_id": "R006",
-    "category": "Stretch Case",
-    "input": "Baltimore data from professional league source",
-    "expected_value": "System rejects or flags non-college team dataset gracefully without crash"
-  },
-  {
-    "case_id": "R007",
-    "category": "Typical Input",
-    "input": "Louisville 2025 data consistency check",
-    "expected_value": "Louisville metrics align with previous scouting model output; no format drift"
-  },
-  {
-    "case_id": "R008",
-    "category": "Edge Case",
-    "input": "Opponent link missing protocol prefix (e.g., www.sports-reference.com)",
-    "expected_value": "System auto-corrects or rejects invalid URL format with clear error message"
-  },
-  {
-    "case_id": "R009",
-    "category": "Stretch Case",
-    "input": "Data feed with 50+ team URLs simultaneously",
-    "expected_value": "All entries processed within performance threshold; no memory leaks"
-  },
-  {
-    "case_id": "R010",
-    "category": "Validation",
-    "input": "Check duplicate entries for same team (e.g., Kentucky appears twice)",
-    "expected_value": "Duplicates consolidated or flagged; no duplicate records in final dataset"
-  },
-  {
-  "case_id": "R011",
-  "category": "Typical Input",
-  "input": "Duke 2025 defensive metrics reload",
-  "expected_value": "Duke defensive efficiency, yards allowed, and turnover data match prior baseline without schema drift"
-},
-{
-  "case_id": "R012",
-  "category": "Edge Case",
-  "input": "Team dataset containing null values for drive-level stats",
-  "expected_value": "System fills or flags nulls consistently; no downstream scoring module failures"
-},
-{
-  "case_id": "R013",
-  "category": "Stress Case",
-  "input": "Consecutive reloads of 5 teams within 1 second",
-  "expected_value": "Caching and rate-limiting behave correctly; no throttling errors or partial writes"
-}
+  { "Team Name": "Clemson", "Link to Opponent Data": "https://www.sports-reference.com/cfb/schools/clemson/2025.html" },
+  { "Team Name": "Miami", "Link to Opponent Data": "https://www.sports-reference.com/cfb/schools/miami-fl/2025.html" },
+  { "Team Name": "SMU", "Link to Opponent Data": "https://www.sports-reference.com/cfb/schools/southern-methodist/2025.html" },
+  { "Team Name": "Kentucky", "Link to Opponent Data": "https://www.sports-reference.com/cfb/schools/kentucky/2025.html" },
+  { "Team Name": "Pittsburgh", "Link to Opponent Data": "https://www.sports-reference.com/cfb/schools/pittsburgh/2025.html" },
 
+  { "Team Name": "Pittsburgh (Extended Name Test)", "Link to Opponent Data": "https://www.sports-reference.com/cfb/schools/pittsburgh/2025.html" },
+  { "Team Name": "Baltimore (Non-College Data Test)", "Link to Opponent Data": "https://www.pro-football-reference.com/teams/rav/2025.htm" },
+  { "Team Name": "Louisville", "Link to Opponent Data": "https://www.sports-reference.com/cfb/schools/louisville/2025.html" },
+  { "Team Name": "URL Missing Protocol Test", "Link to Opponent Data": "www.sports-reference.com/cfb/" },
+  { "Team Name": "Large Batch Processing Test", "Link to Opponent Data": "https://www.sports-reference.com/cfb/" },
+  { "Team Name": "Duplicate Team Check (Kentucky #1)", "Link to Opponent Data": "https://www.sports-reference.com/cfb/schools/kentucky/2025.html" },
+  { "Team Name": "Duplicate Team Check (Kentucky #2)", "Link to Opponent Data": "https://www.sports-reference.com/cfb/schools/kentucky/2025.html" },
+
+
+  { "Team Name": "Duke", "Link to Opponent Data": "https://www.sports-reference.com/cfb/schools/duke/2025.html" },
+  { "Team Name": "Null Values Stress Test", "Link to Opponent Data": "https://www.sports-reference.com/cfb/" },
+  { "Team Name": "Rapid Reload Stress Test", "Link to Opponent Data": "https://www.sports-reference.com/cfb/" }
 ]
+
