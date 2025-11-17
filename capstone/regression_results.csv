@@ -9,5 +9,6 @@ R007,Typical Input,baseline,1,5,Louisville model consistency confirmed
 R008,Edge Case,baseline,0,2,System failed to correct missing protocol in URL
 R009,Stretch Case,baseline,1,4,Handled 50+ team URLs efficiently
 R010,Validation,baseline,1,5,Duplicate team entries correctly handled
-
+RO11,Typical, A, 1, 5, A/B test with typical input. Output was successful and inline with previous tests
+R011,Typical, B, 0, 1, A/B test with typical input. The new context block maxed out the token allotment for my API. The new context block is not feasible.
 
