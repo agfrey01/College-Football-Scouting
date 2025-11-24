@@ -136,7 +136,10 @@ However, after running the updated workflow, the request consistently exceeded t
 
 Next week, I will revert to a lighter-weight context approach and explore alternative methods such as preprocessing the stats into summarized features or storing structured data in smaller chunks that can be selectively loaded based on team. This will maintain performance while avoiding token overflows.
 
+Week 14:
+This presentation summarizes the evolution of my CIS-290 capstone project: an AI-driven scouting report generator built through prompt engineering, controlled schemas, and regression testing. The deck highlights the core components of the system—structured prompt templates, safety & refusal rules, evaluation tools, and example outputs—while demonstrating how ChatGPT reliably processes both standard and edge-case inputs. It also documents ethical safeguards, the reasoning behind using Jupyter for testing, and the practical use cases for coaches, fans, and analysts. The main decisions I still need feedback on are (1) whether the current safety block is appropriately strict for the project’s scope and (2) whether the deck requires additional real-data examples or if the current balance between demos and explanation feels appropriate for the final presentation.
+
 AI Use Note
 Tools and prompts/settings: ChatGPT
-What AI wrote vs what I wrote: ChatGPT editted my writing and formatted into a cohesive narrative for both my README.md file and CHANGELOG.md file
+What AI wrote vs what I wrote: ChatGPT editted my writing and formatted into a cohesive narrative for both my README.md file and reflections.md file
 Two changes after checking facts or adding context: I had to remove the extraneous details the model added to my writing. I also had to add more detail afterward to comprehensively update my README.md file.
