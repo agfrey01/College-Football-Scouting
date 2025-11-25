@@ -78,6 +78,14 @@ Tools and prompts/settings: ChatGPT
 What AI wrote vs what I wrote: I used ChatGPT to synthesize and edit this summary.
 Two changes after checking facts or adding context: Adjusted token limit results; clarified context file purpose.
 
+Week 8:
+After reviewing five test cases, the judge prompt delivered only mild success. It handled structural issues and clear statistical errors well, but it was inconsistent when compared to my human evaluations. The biggest gap was its limited understanding of what coaches consider actionable. The judge often rated generic or low-value insights too highly, while overlooking weaknesses that were tactically meaningful. Because the tool doesn’t reliably assess strategic relevance and disagreed with my human checks, I decided not to keep it for next week. A rubric supported by periodic human review remains more accurate for this project’s coaching-focused context.
+
+AI Use Note
+Tools and prompts/settings: ChatGPT
+What AI wrote vs what I wrote: ChatGPT editted my writing and helped me expand upon my results. 
+Two changes after checking facts or adding context: I had to remove the extraneous details the model added to my writing. I also had to add more detail afterward to comprehensively update my README.md file.
+
 Week 9:
 The sanity_check_report tool was designed to serve as a built-in reviewer that evaluates each generated scouting report for factual and logical accuracy. It checks the model’s output against trusted football data sources (like ESPN or Sports Reference) and flags inconsistencies or unsupported claims before final submission.
 
