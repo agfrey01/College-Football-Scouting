@@ -1,26 +1,11 @@
-# College-Football-Scouting
-
 # Executive Summary
+This project builds a reliable prompt-engineering pipeline for generating structured, data-grounded college football scouting reports. The initial problem was clear: baseline model outputs were often inaccurate, poorly grounded, or non-compliant with the required JSON schema. The prompt template was redesigned to address these issues by guiding the model step-by-step, integrating a Sanity Check tool, and enforcing strict function-calling for schema adherence.
 
-This project builds a stable, evaluation-driven prompt pipeline for generating structured college football scouting reports. The core of the system is a prompt template designed to give the model clear instructions, reduce ambiguity, and consistently return grounded, coach-usable output. The template establishes the task, defines required fields, sets boundaries for model behavior, and reinforces that all insights must come from the provided context rather than assumptions. It also incorporates the Sanity Check Tool to push the model toward accuracy and internal consistency.
+Evaluation was central to the project. Using a rubric, judge prompt, and logged test cases, the system was assessed before and after improvements. Results from evaluations.csv show a measurable improvement: baseline runs passed schema checks only 33% of the time, while the improved prompt achieved 100% schema adherence across its test cases. Quality scores rose from an average of 2.33/5 in the baseline variant to 4.0/5 in the improved variant, demonstrating gains in accuracy, grounding, and actionability. These measured improvements directly validate the impact of prompt refinements.
 
-The project is built around explicit success metrics that guided every iteration:
+Performance and cost constraints also shaped the design. Data from experiments.csv shows average model latency around 9.1 seconds, with several runs hitting token-limit issues that caused truncated outputs. These findings led to trimming unnecessary prompt content, reducing verbosity, and using cached ESPN lookups to cut redundant context. Even though cost fields report $0 (due to local/free-tier testing), the logs confirm that token pressure was an ongoing operational concern.
 
-Accuracy: Outputs must reflect the data supplied and avoid fabricated players or stats.
-
-Actionability: Reports must provide insights that a staff could actually use.
-
-Schema Adherence: All outputs must strictly match the JSON structure for downstream use.
-
-Latency: The system must respond quickly enough to be usable in repeated workflows.
-
-Cost Control: Prompt length and API calls must remain efficient to stay within token budget.
-
-To measure progress, the project includes a rubric, judge prompt, and regression suite. These tools allowed me to test changes systematically and quantify how revisions to the prompt template impacted the success metrics. The judge prompt was only partially reliable—especially on actionability—but the evaluation process still helped identify weaknesses and validate improvements.
-
-The final system resolves team-name inconsistencies through fuzzy matching, handles missing ESPN data gracefully, and reliably loads the correct season’s stat file. By combining a well-structured prompt template with schema enforcement, caching, and controlled context injection, the pipeline meets the project’s objectives: predictable output quality, reduced hallucination risk, lower latency, manageable cost, and repeatability across teams and years.
-
-Overall, the project demonstrates how disciplined prompt design and explicit success criteria can turn an LLM into a dependable component for generating consistent, data-driven scouting intelligence.
+The system now integrates fuzzy team-name matching, dynamic CSV stat loading, and ESPN roster/schedule context with fallbacks for missing seasons. Remaining risks include judge-prompt inconsistency on actionability scoring and gaps in older ESPN stat coverage. Next steps include expanding the regression suite, refining evaluation heuristics, and further optimizing prompt length to reduce latency and token usage.
 
 AI Use Note
 Tools and prompts/settings: ChatGPT
